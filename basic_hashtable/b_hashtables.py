@@ -1,8 +1,9 @@
 
-
 # '''
 # Basic hash table key/value pair
 # '''
+
+
 class Pair:
     def __init__(self, key, value):
         self.key = key
@@ -15,7 +16,10 @@ class Pair:
 # '''
 class BasicHashTable:
     def __init__(self, capacity):
-        pass
+        # max length of hash table
+        self.capacity = capacity
+        # underlying data sructure
+        self.storage = [None] * capacity
 
 
 # '''
